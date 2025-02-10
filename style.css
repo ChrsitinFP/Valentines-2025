@@ -1,0 +1,89 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+    background: url('https://imgur.com/GcFpTaY.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    position: relative;
+}
+
+.envelope {
+    width: 250px;
+    cursor: pointer;
+}
+
+#letter-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#letter {
+    width: 250px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.buttons img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+#yes {
+    position: relative;
+    z-index: 1;
+}
+
+#no {
+    position: absolute;
+    left: 120px;
+    z-index: 2;
+}
+
+#hearts-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    color: red;
+}
+
+#gif-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.yay-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
